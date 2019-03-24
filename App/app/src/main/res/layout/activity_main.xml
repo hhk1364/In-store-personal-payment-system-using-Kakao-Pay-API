@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView
+        android:id="@+id/barcode_scanner"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_above="@+id/title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </com.journeyapps.barcodescanner.DecoratedBarcodeView>
+
+
+    <ListView
+        android:id="@+id/list_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/title"
+        android:textColor="@android:color/white"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:fitsSystemWindows="false"
+        android:focusable="false"
+        android:fontFamily="casual"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:text="리스트"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/total_weight"
+        android:layout_width="110dp"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/list_preview"
+        android:text="총   계 :"
+        android:textAlignment="textStart"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/total_list"
+        android:layout_width="110dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/list_preview"
+        android:text="상품 종류 : "
+        android:textAlignment="textStart"
+        android:textSize="14sp" />
+
+</RelativeLayout>
