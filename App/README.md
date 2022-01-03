@@ -1,1 +1,5 @@
-#Scanner_Test
+2019 졸업작품
+
+- 카카오페이 API 결제를 이용한 무인 매장 시스템
+- 안드로이드 앱 전용
+- Android Studio
